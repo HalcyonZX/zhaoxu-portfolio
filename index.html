@@ -11,13 +11,10 @@
 <!-- 导航栏 -->
 <nav class="site-nav">
   <div class="site-nav__inner">
-    <a href="./index.html" class="site-nav__brand">
-      <span class="site-nav__brand-name">赵旭</span>
-      <span class="site-nav__brand-tag">Portfolio</span>
-    </a>
+    <a href="./index.html" class="site-nav__brand">赵旭</a>
     <div class="site-nav__links" id="nav-links">
-      <a href="#" class="active" data-section="articles">公众号文章</a>
-      <a href="#" data-section="videos">视频号视频</a>
+      <a href="#" class="active" data-section="articles">文章</a>
+      <a href="#" data-section="videos">视频</a>
       <a href="#" data-section="plans">策划案</a>
     </div>
     <button class="site-nav__menu-btn" id="menu-btn" aria-label="菜单">
@@ -26,58 +23,55 @@
   </div>
 </nav>
 
-<!-- 个人介绍 Hero -->
+<!-- 个人介绍 -->
 <header class="hero">
   <div class="hero__inner">
-    <div class="hero__avatar" id="hero-avatar">赵</div>
-    <h1 class="hero__name" id="hero-name">赵旭</h1>
-    <p class="hero__title" id="hero-title">内容创作者</p>
-    <p class="hero__bio" id="hero-bio">专注于品牌内容策划与创作，涵盖公众号图文、视频号短视频及深度策划案。</p>
-    <div class="hero__stats">
-      <div class="hero__stat">
-        <span class="hero__stat-num" id="stat-articles">0</span>
-        <span class="hero__stat-label">篇文章</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num" id="stat-videos">0</span>
-        <span class="hero__stat-label">个视频</span>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num" id="stat-plans">0</span>
-        <span class="hero__stat-label">份策划案</span>
-      </div>
+    <div class="hero__avatar" id="hero-avatar">
+      <img src="" alt="赵旭" id="hero-avatar-img" style="display:none;">
+      <span id="hero-avatar-text">赵</span>
+    </div>
+    <div class="hero__text">
+      <h1 class="hero__name" id="hero-name">赵旭</h1>
+      <p class="hero__title" id="hero-title">内容创作者</p>
+    </div>
+  </div>
+  <p class="hero__bio" id="hero-bio">专注于品牌内容策划与创作，涵盖公众号图文、视频号短视频及深度策划案。</p>
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <span class="hero__stat-num" id="stat-articles">0</span>
+      <span class="hero__stat-label">文章</span>
+    </div>
+    <div class="hero__stat-divider"></div>
+    <div class="hero__stat">
+      <span class="hero__stat-num" id="stat-videos">0</span>
+      <span class="hero__stat-label">视频</span>
+    </div>
+    <div class="hero__stat-divider"></div>
+    <div class="hero__stat">
+      <span class="hero__stat-num" id="stat-plans">0</span>
+      <span class="hero__stat-label">策划案</span>
     </div>
   </div>
 </header>
+
+<!-- 分割线 -->
+<div class="divider"></div>
 
 <!-- 主内容区 -->
 <main class="main-content">
 
   <!-- 分类标签栏 -->
   <div class="tab-bar" id="tab-bar">
-    <button class="tab-btn active" data-tab="articles">
-      <span class="tab-btn__icon">📝</span>
-      <span>公众号文章</span>
-      <span class="tab-btn__count" id="tab-count-articles">0</span>
-    </button>
-    <button class="tab-btn" data-tab="videos">
-      <span class="tab-btn__icon">🎬</span>
-      <span>视频号视频</span>
-      <span class="tab-btn__count" id="tab-count-videos">0</span>
-    </button>
-    <button class="tab-btn" data-tab="plans">
-      <span class="tab-btn__icon">📋</span>
-      <span>策划案</span>
-      <span class="tab-btn__count" id="tab-count-plans">0</span>
-    </button>
+    <button class="tab-btn active" data-tab="articles">文章</button>
+    <button class="tab-btn" data-tab="videos">视频</button>
+    <button class="tab-btn" data-tab="plans">策划案</button>
   </div>
 
   <!-- 内容列表 -->
   <div class="content-section active" id="section-articles">
     <div class="content-grid" id="grid-articles"></div>
     <div class="empty-state" id="empty-articles">
-      <div class="empty-state__icon">📝</div>
-      <h3 class="empty-state__title">暂无公众号文章</h3>
+      <h3 class="empty-state__title">暂无文章</h3>
       <p class="empty-state__desc">文章链接将在添加后在此展示</p>
     </div>
   </div>
@@ -85,7 +79,6 @@
   <div class="content-section" id="section-videos">
     <div class="content-grid content-grid--video" id="grid-videos"></div>
     <div class="empty-state" id="empty-videos">
-      <div class="empty-state__icon">🎬</div>
       <h3 class="empty-state__title">暂无视频</h3>
       <p class="empty-state__desc">视频作品将在添加后在此展示</p>
     </div>
@@ -94,7 +87,6 @@
   <div class="content-section" id="section-plans">
     <div class="content-grid" id="grid-plans"></div>
     <div class="empty-state" id="empty-plans">
-      <div class="empty-state__icon">📋</div>
       <h3 class="empty-state__title">暂无策划案</h3>
       <p class="empty-state__desc">策划案文档将在添加后在此展示</p>
     </div>
@@ -104,7 +96,7 @@
 
 <!-- 页脚 -->
 <footer class="site-footer">
-  <p>&copy; 2026 赵旭 · 个人作品集</p>
+  <p>&copy; 2026 赵旭</p>
 </footer>
 
 <!-- 视频播放弹窗 -->

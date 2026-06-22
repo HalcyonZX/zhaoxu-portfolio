@@ -23,7 +23,6 @@
     renderAllSections();
     bindEvents();
     updateStats();
-    updateTabCounts();
   }
 
   // ============ 数据加载 ============
@@ -42,14 +41,16 @@
     const p = contentData.profile;
     if (p.name) {
       $('#hero-name').textContent = p.name;
-      $('#hero-avatar').textContent = p.name.charAt(0);
+      $('#hero-avatar-text').textContent = p.name.charAt(0);
       document.title = p.name + ' — 个人作品集';
     }
     if (p.title) $('#hero-title').textContent = p.title;
     if (p.bio) $('#hero-bio').textContent = p.bio;
     if (p.avatar) {
-      const avatarEl = $('#hero-avatar');
-      avatarEl.innerHTML = '<img src="' + escapeHtml(p.avatar) + '" alt="头像">';
+      const imgEl = $('#hero-avatar-img');
+      imgEl.src = p.avatar;
+      imgEl.style.display = 'block';
+      $('#hero-avatar-text').style.display = 'none';
     }
   }
 
@@ -60,11 +61,6 @@
     $('#stat-plans').textContent = contentData.plans.length;
   }
 
-  function updateTabCounts() {
-    $('#tab-count-articles').textContent = contentData.articles.length;
-    $('#tab-count-videos').textContent = contentData.videos.length;
-    $('#tab-count-plans').textContent = contentData.plans.length;
-  }
 
   // ============ 内容渲染 ============
   function renderAllSections() {
