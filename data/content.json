@@ -1,0 +1,70 @@
+{
+  "profile": {
+    "name": "赵旭",
+    "title": "内容创作者",
+    "bio": "专注于品牌内容策划与创作，涵盖公众号图文、视频号短视频及深度策划案。",
+    "avatar": ""
+  },
+  "articles": [
+    {
+      "id": "art-001",
+      "title": "如何用内容驱动品牌增长",
+      "description": "探讨内容营销的核心逻辑与实战方法论",
+      "url": "https://mp.weixin.qq.com",
+      "coverImage": "",
+      "date": "2026-06-15"
+    },
+    {
+      "id": "art-002",
+      "title": "2026年企业数字化转型趋势洞察",
+      "description": "从SaaS到AI，数字化如何重塑企业运营",
+      "url": "https://mp.weixin.qq.com",
+      "coverImage": "",
+      "date": "2026-06-01"
+    },
+    {
+      "id": "art-003",
+      "title": "B2B营销的五大黄金法则",
+      "description": "从获客到转化，全链路解析",
+      "url": "https://mp.weixin.qq.com",
+      "coverImage": "",
+      "date": "2026-05-20"
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-001",
+      "title": "3分钟了解CRM核心价值",
+      "description": "用最简单的方式讲清楚CRM系统",
+      "videoUrl": "",
+      "coverImage": "",
+      "duration": "3:25",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "vid-002",
+      "title": "客户案例：某制造企业数字化升级实录",
+      "description": "真实客户的故事，从痛点到解决方案",
+      "videoUrl": "",
+      "coverImage": "",
+      "duration": "5:18",
+      "date": "2026-05-28"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan-001",
+      "title": "2026春季产品发布会策划案",
+      "description": "包含活动流程、嘉宾邀请、传播方案等完整策划",
+      "pdfUrl": "",
+      "date": "2026-03-01"
+    },
+    {
+      "id": "plan-002",
+      "title": "品牌年度内容营销规划",
+      "description": "全年内容日历、主题策划与资源分配",
+      "pdfUrl": "",
+      "date": "2026-01-15"
+    }
+  ]
+}
