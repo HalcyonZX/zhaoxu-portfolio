@@ -501,54 +501,67 @@ body {
 }
 
 /* ================================================
-   响应式
+   响应式 — 多断点精细适配
+   断点策略：
+   - ≤480px: 小手机（紧凑布局）
+   - 481-768px: 标准手机/大手机（单列视频）
+   - 769-1024px: 平板（视频2列、加宽容器）
+   - ≥1025px: 桌面（容器居中 720px）
    ================================================ */
-@media (max-width: 680px) {
+
+/* ---- 平板及以下：导航变汉堡菜单 ---- */
+@media (max-width: 768px) {
   :root {
     --max-w: 100%;
     --gap-xl: 56px;
     --gap-lg: 40px;
-    --gap-md: 20px;
+    --gap-md: 22px;
     --gap-sm: 14px;
+    --nav-h: 50px;
   }
   .main-content { padding: 0 var(--gap-sm) var(--gap-xl); }
   .hero { padding: var(--gap-lg) var(--gap-sm) var(--gap-md); }
   .divider { padding: 0 var(--gap-sm); }
 
-  /* 导航移动端 */
+  /* 导航移动端 — 汉堡菜单 */
   .site-nav__links {
     display: none; position: absolute;
     top: var(--nav-h); left: 0; right: 0;
-    background: rgba(242, 242, 244, 0.97);
+    background: rgba(242, 242, 244, 0.98);
     backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     flex-direction: column; padding: 12px 20px;
     border-bottom: 1px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   }
   .site-nav__links.open { display: flex; }
-  .site-nav__links a { padding: 12px 0; width: 100%; border-radius: 0; }
-  .site-nav__links a.active { background: var(--accent-soft); }
+  .site-nav__links a { padding: 13px 4px; width: 100%; border-radius: 0; font-size: 14px; }
+  .site-nav__links a:not(:last-child) { border-bottom: 1px solid var(--border-light); }
+  .site-nav__links a.active { background: transparent; color: var(--accent); }
   .site-nav__menu-btn { display: flex; }
 
   /* Hero 移动端 */
-  .hero { text-align: center; }
-  .hero__avatar { width: 104px; height: 104px; border-width: 2.5px; }
-  .hero__avatar span { font-size: 30px; }
-  .hero__name { font-size: 24px; }
-  .hero__bio { font-size: 13px; }
+  .hero__avatar { width: 110px; height: 110px; border-width: 2.5px; }
+  .hero__avatar span { font-size: 32px; }
+  .hero__name { font-size: 26px; }
+  .hero__bio { font-size: 13.5px; }
   .hero__stats { gap: var(--gap-md); flex-wrap: wrap; }
-  .hero__stat-num { font-size: 24px; }
+  .hero__stat-num { font-size: 26px; }
 
   /* 视频单列 */
   .content-grid--video { grid-template-columns: 1fr; }
 
   /* 文章卡片移动端 */
-  .article-card__cover { width: 62px; height: 62px; }
+  .article-card__cover { width: 64px; height: 64px; }
   .article-card__title { font-size: 14px; }
   .article-card__arrow { display: none; }
 
   /* 策划案移动端 */
-  .plan-card__icon { width: 38px; height: 38px; font-size: 16px; }
+  .plan-card__icon { width: 40px; height: 40px; font-size: 16px; }
   .plan-card__arrow { display: none; }
+
+  /* 标签栏 — 平铺宽度 */
+  .tab-btn { flex: 1; padding: 13px 12px 15px; }
 
   /* 弹窗全屏 */
   .modal { padding: 0; }
@@ -558,14 +571,94 @@ body {
     height: 100vh;
   }
   .modal__container--video { height: auto; }
+  .modal__info { padding: 14px 16px; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .modal__title { font-size: 15px; white-space: normal; }
 }
 
-@media (min-width: 681px) and (max-width: 960px) {
+/* ---- 小手机（≤480px）— 更紧凑 ---- */
+@media (max-width: 480px) {
+  :root {
+    --gap-xl: 44px;
+    --gap-lg: 32px;
+    --gap-md: 18px;
+    --gap-sm: 12px;
+    --nav-h: 48px;
+  }
+  /* 头像更小 */
+  .hero__avatar { width: 96px; height: 96px; border-width: 2px; }
+  .hero__avatar span { font-size: 28px; }
+  .hero__name { font-size: 23px; letter-spacing: -0.5px; }
+  .hero__title { font-size: 11px; padding: 5px 14px; letter-spacing: 2.5px; }
+  .hero__bio { font-size: 13px; line-height: 1.85; }
+  .hero__stat-num { font-size: 22px; }
+  .hero__stat-label { font-size: 10px; }
+  .hero__stats { gap: var(--gap-sm); }
+
+  /* 导航品牌名稍小 */
+  .site-nav__brand { font-size: 12px; letter-spacing: 1.2px; }
+  .site-nav__inner { padding: 0 var(--gap-sm); }
+
+  /* 标签栏字体 */
+  .tab-btn { font-size: 12.5px; padding: 11px 8px 13px; letter-spacing: 0.3px; }
+  .tab-btn.active::after { left: 12px; right: 12px; }
+
+  /* 文章卡片紧凑 */
+  .article-card { padding: 14px 0; gap: 12px; }
+  .article-card__cover { width: 56px; height: 56px; }
+  .article-card__title { font-size: 13.5px; line-height: 1.5; }
+  .article-card__desc { font-size: 12px; -webkit-line-clamp: 2; }
+  .article-card__date { font-size: 10.5px; }
+
+  /* 视频卡片紧凑 */
+  .video-card__body { padding: 11px 12px 13px; }
+  .video-card__title { font-size: 13px; }
+  .video-card__date { font-size: 10.5px; }
+  .video-card__play { width: 44px; height: 44px; }
+  .video-card__play::after { border-width: 7px 0 7px 12px; }
+  .video-card__duration { font-size: 10px; padding: 2px 6px; bottom: 6px; right: 6px; }
+
+  /* 策划案卡片紧凑 */
+  .plan-card { padding: 14px 0; gap: 12px; }
+  .plan-card__icon { width: 36px; height: 36px; font-size: 15px; }
+  .plan-card__title { font-size: 13.5px; }
+  .plan-card__desc { font-size: 12px; }
+  .plan-card__date { font-size: 10.5px; }
+  .plan-card__badge { font-size: 9px; padding: 3px 9px; }
+
+  /* 弹窗 — 顶部关闭按钮稍小 */
+  .modal__close { width: 32px; height: 32px; font-size: 16px; top: 10px; right: 10px; }
+  .modal__download-btn { font-size: 11.5px; padding: 7px 16px; }
+
+  /* 页脚 */
+  .site-footer { font-size: 10.5px; }
+  .site-footer::before { width: 32px; margin-bottom: 12px; }
+}
+
+/* ---- 标准手机（481-768px） ---- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero__avatar { width: 120px; height: 120px; }
+  .hero__avatar span { font-size: 34px; }
+  .hero__name { font-size: 28px; }
+}
+
+/* ---- 平板（769-1024px）— 视频2列，容器稍宽 ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root { --max-w: 760px; }
   .content-grid--video { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 961px) {
+/* ---- 桌面（≥1025px）— 容器居中 ---- */
+@media (min-width: 1025px) {
   :root { --max-w: 720px; }
+}
+
+/* ---- 大桌面（≥1440px）— 留白更宽舒 ---- */
+@media (min-width: 1440px) {
+  :root {
+    --gap-xl: 100px;
+    --gap-lg: 68px;
+    --gap-md: 40px;
+  }
 }
 
 /* ================================================
