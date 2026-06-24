@@ -549,6 +549,8 @@ body {
     font-size: clamp(12px, 3.4vw, 13.5px);
     letter-spacing: -0.3px;
     line-height: 1.7;
+    white-space: nowrap;          /* 强制单行 */
+    max-width: none;             /* 移除 420px 限制 */
   }
   .hero__stats { gap: var(--gap-md); flex-wrap: wrap; }
   .hero__stat-num { font-size: 26px; }
@@ -599,6 +601,8 @@ body {
     font-size: clamp(11px, 3.4vw, 12.5px);
     letter-spacing: -0.4px;
     line-height: 1.65;
+    white-space: nowrap;
+    max-width: none;
   }
   .hero__stat-num { font-size: 22px; }
   .hero__stat-label { font-size: 10px; }
