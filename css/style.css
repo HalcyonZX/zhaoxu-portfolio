@@ -219,6 +219,51 @@ body {
 }
 
 /* ================================================
+   文章二级分类 tab
+   ================================================ */
+.subtab-bar {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-top: var(--gap-md); margin-bottom: var(--gap-md);
+  padding-bottom: var(--gap-md);
+  border-bottom: 1px dashed var(--border);
+}
+.subtab-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 999px;
+  font-size: 12.5px; font-weight: 500;
+  color: var(--text-3); cursor: pointer;
+  font-family: var(--font-sans);
+  letter-spacing: 0.3px;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subtab-btn:hover {
+  color: var(--text-1);
+  border-color: var(--text-4);
+}
+.subtab-btn.active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+  box-shadow: 0 4px 14px -4px rgba(216, 138, 149, 0.55);
+}
+.subtab-btn__count {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 18px; height: 18px; padding: 0 5px;
+  font-size: 10.5px; font-weight: 700;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text-3);
+}
+.subtab-btn.active .subtab-btn__count {
+  background: rgba(255, 255, 255, 0.32);
+  color: #fff;
+}
+
+/* ================================================
    内容区
    ================================================ */
 .content-section { display: none; }
@@ -582,6 +627,11 @@ body {
   .modal__container--video { height: auto; }
   .modal__info { padding: 14px 16px; flex-direction: column; align-items: flex-start; gap: 10px; }
   .modal__title { font-size: 15px; white-space: normal; }
+
+  /* 二级分类 tab 移动端 */
+  .subtab-bar { gap: 6px; margin-top: var(--gap-md); }
+  .subtab-btn { padding: 6px 12px; font-size: 12px; }
+  .subtab-btn__count { min-width: 16px; height: 16px; font-size: 10px; }
 }
 
 /* ---- 小手机（≤480px）— 更紧凑 ---- */

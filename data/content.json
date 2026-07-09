@@ -5,30 +5,26 @@
     "bio": "专注品牌内容创作与营销策划，擅长公众号图文、视频号内容及全案策划。",
     "avatar": "./assets/covers/avatar.jpg"
   },
-  "articles": [
+  "articleCategories": [
     {
-      "id": "art-001",
-      "title": "如何用内容驱动品牌增长",
-      "description": "探讨内容营销的核心逻辑与实战方法论",
-      "url": "https://mp.weixin.qq.com",
-      "coverImage": "",
-      "date": "2026-06-15"
+      "id": "product",
+      "name": "产品",
+      "items": []
     },
     {
-      "id": "art-002",
-      "title": "2026年企业数字化转型趋势洞察",
-      "description": "从SaaS到AI，数字化如何重塑企业运营",
-      "url": "https://mp.weixin.qq.com",
-      "coverImage": "",
-      "date": "2026-06-01"
+      "id": "case",
+      "name": "客户案例",
+      "items": []
     },
     {
-      "id": "art-003",
-      "title": "B2B营销的五大黄金法则",
-      "description": "从获客到转化，全链路解析",
-      "url": "https://mp.weixin.qq.com",
-      "coverImage": "",
-      "date": "2026-05-20"
+      "id": "creative",
+      "name": "创意策划",
+      "items": []
+    },
+    {
+      "id": "event",
+      "name": "活动",
+      "items": []
     }
   ],
   "videos": [

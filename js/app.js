@@ -9,6 +9,7 @@
   // ============ 全局状态 ============
   let contentData = null;
   let currentTab = 'articles';
+  let currentArticleCategory = 'product';
 
   // ============ DOM 引用 ============
   const $ = (sel) => document.querySelector(sel);
@@ -30,9 +31,28 @@
     try {
       const res = await fetch('./data/content.json');
       contentData = await res.json();
+      // 兜底：确保有 articleCategories
+      if (!contentData.articleCategories) {
+        contentData.articleCategories = [
+          { id: 'product', name: '产品', items: [] },
+          { id: 'case', name: '客户案例', items: [] },
+          { id: 'creative', name: '创意策划', items: [] },
+          { id: 'event', name: '活动', items: [] }
+        ];
+      }
     } catch (err) {
       console.error('加载内容数据失败:', err);
-      contentData = { profile: { name: '赵旭', title: '内容创作者', bio: '' }, articles: [], videos: [], plans: [] };
+      contentData = {
+        profile: { name: '赵旭', title: '内容创作者', bio: '' },
+        articleCategories: [
+          { id: 'product', name: '产品', items: [] },
+          { id: 'case', name: '客户案例', items: [] },
+          { id: 'creative', name: '创意策划', items: [] },
+          { id: 'event', name: '活动', items: [] }
+        ],
+        videos: [],
+        plans: []
+      };
     }
   }
 
@@ -56,7 +76,10 @@
 
   // ============ 统计更新 ============
   function updateStats() {
-    $('#stat-articles').textContent = contentData.articles.length;
+    const articleCount = (contentData.articleCategories || []).reduce(function (sum, c) {
+      return sum + (c.items ? c.items.length : 0);
+    }, 0);
+    $('#stat-articles').textContent = articleCount;
     $('#stat-videos').textContent = contentData.videos.length;
     $('#stat-plans').textContent = contentData.plans.length;
   }
@@ -64,26 +87,55 @@
 
   // ============ 内容渲染 ============
   function renderAllSections() {
+    renderArticleSubtabs();
     renderArticles();
     renderVideos();
     renderPlans();
+  }
+
+  // --- 文章二级分类 tab ---
+  function renderArticleSubtabs() {
+    const bar = $('#subtab-bar-articles');
+    const categories = contentData.articleCategories || [];
+    bar.innerHTML = categories.map(function (c) {
+      const cls = 'subtab-btn' + (c.id === currentArticleCategory ? ' active' : '');
+      const count = (c.items || []).length;
+      return '<button class="' + cls + '" data-cat="' + c.id + '">' +
+        escapeHtml(c.name) +
+        (count > 0 ? '<span class="subtab-btn__count">' + count + '</span>' : '') +
+        '</button>';
+    }).join('');
+    // 绑定点击
+    bar.querySelectorAll('.subtab-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        currentArticleCategory = this.dataset.cat;
+        renderArticleSubtabs();
+        renderArticles();
+      });
+    });
   }
 
   // --- 公众号文章 ---
   function renderArticles() {
     const grid = $('#grid-articles');
     const empty = $('#empty-articles');
-    const items = contentData.articles;
+    const categories = contentData.articleCategories || [];
+    const cat = categories.find(function (c) { return c.id === currentArticleCategory; });
+    const items = (cat && cat.items) ? cat.items : [];
 
     if (!items.length) {
       grid.style.display = 'none';
       empty.style.display = 'block';
+      // 提示当前分类
+      if (cat) {
+        empty.querySelector('.empty-state__title').textContent = '「' + cat.name + '」暂无文章';
+      }
       return;
     }
 
     grid.style.display = 'flex';
     empty.style.display = 'none';
-    grid.innerHTML = items.map((item) => {
+    grid.innerHTML = items.map(function (item) {
       const coverContent = item.coverImage
         ? '<img src="' + escapeHtml(item.coverImage) + '" alt="' + escapeHtml(item.title) + '">'
         : '📄';
