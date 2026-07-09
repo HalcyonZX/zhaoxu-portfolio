@@ -10,6 +10,7 @@
   let contentData = null;
   let currentTab = 'articles';
   let currentArticleCategory = 'product';
+  let currentVideoCategory = 'product';
 
   // ============ DOM 引用 ============
   const $ = (sel) => document.querySelector(sel);
@@ -42,6 +43,16 @@
           { id: 'event', name: '活动', items: [] }
         ];
       }
+      // 兜底：确保有 videoCategories
+      if (!contentData.videoCategories) {
+        contentData.videoCategories = [
+          { id: 'product', name: '产品', items: [] },
+          { id: 'event', name: '活动', items: [] },
+          { id: 'voice', name: '口播', items: [] },
+          { id: 'interview', name: '访谈', items: [] },
+          { id: 'creative', name: '创意策划', items: [] }
+        ];
+      }
     } catch (err) {
       console.error('加载内容数据失败:', err);
       contentData = {
@@ -52,7 +63,13 @@
           { id: 'creative', name: '创意策划', items: [] },
           { id: 'event', name: '活动', items: [] }
         ],
-        videos: [],
+        videoCategories: [
+          { id: 'product', name: '产品', items: [] },
+          { id: 'event', name: '活动', items: [] },
+          { id: 'voice', name: '口播', items: [] },
+          { id: 'interview', name: '访谈', items: [] },
+          { id: 'creative', name: '创意策划', items: [] }
+        ],
         plans: []
       };
     }
@@ -82,7 +99,12 @@
       return sum + (c.items ? c.items.length : 0);
     }, 0);
     $('#stat-articles').textContent = articleCount;
-    $('#stat-videos').textContent = contentData.videos.length;
+
+    const videoCount = (contentData.videoCategories || []).reduce(function (sum, c) {
+      return sum + (c.items ? c.items.length : 0);
+    }, 0);
+    $('#stat-videos').textContent = videoCount;
+
     $('#stat-plans').textContent = contentData.plans.length;
   }
 
@@ -91,6 +113,7 @@
   function renderAllSections() {
     renderArticleSubtabs();
     renderArticles();
+    renderVideoSubtabs();
     renderVideos();
     renderPlans();
   }
@@ -152,36 +175,58 @@
     }).join('');
   }
 
-  // --- 视频号视频 ---
+  // --- 视频二级分类 tab ---
+  function renderVideoSubtabs() {
+    const bar = $('#subtab-bar-videos');
+    const categories = contentData.videoCategories || [];
+    bar.innerHTML = categories.map(function (c) {
+      const cls = 'subtab-btn' + (c.id === currentVideoCategory ? ' active' : '');
+      const count = (c.items || []).length;
+      return '<button class="' + cls + '" data-cat="' + c.id + '">' +
+        escapeHtml(c.name) +
+        (count > 0 ? '<span class="subtab-btn__count">' + count + '</span>' : '') +
+        '</button>';
+    }).join('');
+    // 绑定点击
+    bar.querySelectorAll('.subtab-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        currentVideoCategory = this.dataset.cat;
+        renderVideoSubtabs();
+        renderVideos();
+      });
+    });
+  }
+
+  // --- 视频号视频（与文章同样式，外链跳转） ---
   function renderVideos() {
     const grid = $('#grid-videos');
     const empty = $('#empty-videos');
-    const items = contentData.videos;
+    const categories = contentData.videoCategories || [];
+    const cat = categories.find(function (c) { return c.id === currentVideoCategory; });
+    const items = (cat && cat.items) ? cat.items : [];
 
     if (!items.length) {
       grid.style.display = 'none';
       empty.style.display = 'block';
+      if (cat) {
+        empty.querySelector('.empty-state__title').textContent = '「' + cat.name + '」暂无视频';
+      }
       return;
     }
 
-    grid.style.display = 'grid';
+    grid.style.display = 'flex';
     empty.style.display = 'none';
-    grid.innerHTML = items.map((item, idx) => {
-      const coverContent = item.coverImage
-        ? '<img src="' + escapeHtml(item.coverImage) + '" alt="' + escapeHtml(item.title) + '">'
-        : '';
+    grid.innerHTML = items.map(function (item) {
+      const dateStr = item.date || '';
       return (
-        '<div class="video-card" data-video-idx="' + idx + '">' +
-          '<div class="video-card__preview">' +
-            (coverContent || '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:40px;">🎬</div>') +
-            '<div class="video-card__play"></div>' +
-            (item.duration ? '<div class="video-card__duration">' + escapeHtml(item.duration) + '</div>' : '') +
+        '<a class="article-card" href="' + escapeHtml(item.url || '#') + '" target="_blank" rel="noopener noreferrer">' +
+          '<div class="article-card__body">' +
+            '<div class="article-card__date">' + escapeHtml(dateStr) + '</div>' +
+            '<div class="article-card__title">' + escapeHtml(item.title) + '</div>' +
+            (item.description ? '<div class="article-card__desc">' + escapeHtml(item.description) + '</div>' : '') +
           '</div>' +
-          '<div class="video-card__body">' +
-            '<div class="video-card__title">' + escapeHtml(item.title) + '</div>' +
-            '<div class="video-card__date">' + escapeHtml(item.date || '') + '</div>' +
-          '</div>' +
-        '</div>'
+          '<span class="article-card__arrow">↗</span>' +
+        '</a>'
       );
     }).join('');
   }
@@ -243,14 +288,6 @@
       $('#nav-links').classList.toggle('open');
     });
 
-    // 视频卡片点击
-    $('#grid-videos').addEventListener('click', function (e) {
-      var card = e.target.closest('.video-card');
-      if (!card) return;
-      var idx = parseInt(card.dataset.videoIdx, 10);
-      openVideoModal(idx);
-    });
-
     // 策划案卡片点击
     $('#grid-plans').addEventListener('click', function (e) {
       var card = e.target.closest('.plan-card');
@@ -259,10 +296,6 @@
       openPdfModal(idx);
     });
 
-    // 视频弹窗关闭
-    $('#video-modal-close').addEventListener('click', closeVideoModal);
-    $('#video-modal .modal__overlay').addEventListener('click', closeVideoModal);
-
     // PDF弹窗关闭
     $('#pdf-modal-close').addEventListener('click', closePdfModal);
     $('#pdf-modal .modal__overlay').addEventListener('click', closePdfModal);
@@ -270,7 +303,6 @@
     // ESC 关闭弹窗
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
-        closeVideoModal();
         closePdfModal();
       }
     });
@@ -291,28 +323,6 @@
     $$('#nav-links a').forEach(function (a) {
       a.classList.toggle('active', a.dataset.section === tab);
     });
-  }
-
-  // ============ 视频弹窗 ============
-  function openVideoModal(idx) {
-    var item = contentData.videos[idx];
-    if (!item) return;
-
-    var player = $('#video-player');
-    player.src = item.videoUrl || '';
-    $('#video-modal-title').textContent = item.title || '';
-    $('#video-modal-desc').textContent = item.description || '';
-    $('#video-modal').classList.add('show');
-    document.body.style.overflow = 'hidden';
-    player.play().catch(function () {});
-  }
-
-  function closeVideoModal() {
-    var player = $('#video-player');
-    player.pause();
-    player.src = '';
-    $('#video-modal').classList.remove('show');
-    document.body.style.overflow = '';
   }
 
   // ============ PDF 弹窗 ============
