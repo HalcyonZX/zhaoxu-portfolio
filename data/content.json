@@ -54,17 +54,45 @@
   "plans": [
     {
       "id": "plan-001",
-      "title": "2026春季产品发布会策划案",
-      "description": "包含活动流程、嘉宾邀请、传播方案等完整策划",
-      "pdfUrl": "",
-      "date": "2026-03-01"
+      "title": "青岛虚拟现实创享中心事件传播营销建议",
+      "description": "围绕虚拟现实创享中心的事件传播与营销策略方案",
+      "pdfUrl": "./assets/pdfs/qingdao-vr-marketing-0613.pdf",
+      "date": "2024-06-13"
     },
     {
       "id": "plan-002",
-      "title": "品牌年度内容营销规划",
-      "description": "全年内容日历、主题策划与资源分配",
-      "pdfUrl": "",
-      "date": "2026-01-15"
+      "title": "XR沉浸式体验装置建议方案",
+      "description": "XR沉浸式体验装置的创意设计与落地建议",
+      "pdfUrl": "./assets/pdfs/xr-immersive-0809.pdf",
+      "date": "2024-08-09"
+    },
+    {
+      "id": "plan-003",
+      "title": "极狐汽车新品类发布会创意方向",
+      "description": "极狐汽车新品类发布会的创意方向与执行方案",
+      "pdfUrl": "./assets/pdfs/arcfox-launch-concept.pdf",
+      "date": "2024-08-07"
+    },
+    {
+      "id": "plan-004",
+      "title": "平安居家养老线上发布会",
+      "description": "平安居家养老线上发布会的策划与传播方案",
+      "pdfUrl": "./assets/pdfs/pingan-elderly-care-0606.pdf",
+      "date": "2024-06-06"
+    },
+    {
+      "id": "plan-005",
+      "title": "零跑C01发布会场景汇报",
+      "description": "零跑C01发布会现场场景汇报方案 V1",
+      "pdfUrl": "./assets/pdfs/leap-c01-launch-0823.pdf",
+      "date": "2022-08-23"
+    },
+    {
+      "id": "plan-006",
+      "title": "TechWorld 2022 商用大会创意方案",
+      "description": "联想 TechWorld 2022 商用大会整体创意方案",
+      "pdfUrl": "./assets/pdfs/techworld-2022.pdf",
+      "date": "2022-09-01"
     }
   ]
 }
