@@ -29,7 +29,9 @@
   // ============ 数据加载 ============
   async function loadContent() {
     try {
-      const res = await fetch('./data/content.json');
+      // 加 cache-busting 查询参数，避免 GitHub Pages CDN 缓存旧版数据
+      const cacheBuster = '?v=' + Date.now();
+      const res = await fetch('./data/content.json' + cacheBuster, { cache: 'no-store' });
       contentData = await res.json();
       // 兜底：确保有 articleCategories
       if (!contentData.articleCategories) {
