@@ -369,29 +369,184 @@
   ],
   "videoCategories": [
     {
-      "id": "product",
-      "name": "产品",
-      "items": []
-    },
-    {
       "id": "event",
       "name": "活动",
-      "items": []
+      "items": [
+        {
+          "id": "vid-event-ansygzlyp",
+          "title": "走进百亿级数字服务商！看长虹佳华×纷享销客如何用“数智中台+AI”撬动业务增长。",
+          "url": "https://weixin.qq.com/sph/ANSygzLyp",
+          "date": ""
+        },
+        {
+          "id": "vid-event-aqyaoaniu",
+          "title": "近日，由纷享销客联合东鹏控股和北森举办的“【数字化标杆】游学系列活动之走进东鹏控股”圆满结束！活动围绕“智能展厅参观+数字化转型经验分享+AI CRM解决方案展示”的多元游学形式，共同探索制造业转型新路径！",
+          "url": "https://weixin.qq.com/sph/AqyaOANiu",
+          "date": ""
+        },
+        {
+          "id": "vid-event-adjrlyczo",
+          "title": "中科三清通过纷享销客CRM系统，商机信息准确率从40%飙升至99%，项目关键决策率从10%提升到97%，商机项目失败率下降33%，纷享销客CRM，让企业运营更加精准、高效、可持续。",
+          "url": "https://weixin.qq.com/sph/AdjrLyCzo",
+          "date": ""
+        },
+        {
+          "id": "vid-event-aqimymski",
+          "title": "CRM实战派：纷享销客 CRM助力君诚塑胶重塑2000+客户管理，实现数字化飞跃！",
+          "url": "https://weixin.qq.com/sph/AQiMYMskI",
+          "date": ""
+        },
+        {
+          "id": "vid-event-akewy5tji",
+          "title": "CRM实战派：一担粮使用纷享销客CRM系统，让销售策略更准、库存周转更快、费用花得更值！",
+          "url": "https://weixin.qq.com/sph/AkEwY5tJI",
+          "date": ""
+        }
+      ]
     },
     {
       "id": "voice",
       "name": "口播",
-      "items": []
+      "items": [
+        {
+          "id": "vid-voice-adx9ybojk",
+          "title": "CRM实战派：纷享销客CRM助力中科三清商机准确率从40%提升到99%",
+          "url": "https://weixin.qq.com/sph/Adx9YboJK",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-akewy5tji",
+          "title": "CRM实战派：一担粮使用纷享销客CRM系统，让销售策略更准、库存周转更快、费用花得更值！",
+          "url": "https://weixin.qq.com/sph/AkEwY5tJI",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-ab6frife2",
+          "title": "CRM实战派：纷享销客CRM助力沃森集团重构增长曲线",
+          "url": "https://weixin.qq.com/sph/Ab6fRiFe2",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-apdx050og",
+          "title": "CRM实战派：天财商龙依托纷享销客 CRM 构建标准交付项目管理体系，将行业经验转化为可复制的成功方法论。",
+          "url": "https://weixin.qq.com/sph/Apdx050og",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-aq2rv4jqa",
+          "title": "京酒新标杆：一担粮酒庄数字化转型的成功之路",
+          "url": "https://weixin.qq.com/sph/AQ2rv4Jqa",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-aicfo58mj",
+          "title": "CRM实战派：净水行业领军品牌借助纷享销客CRM构建工单管理闭环，客户满意度突破90%，复购率攀升至70%！",
+          "url": "https://weixin.qq.com/sph/AiCfO58MJ",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-amvbq4jxz",
+          "title": "传统制造业的数字化破局：沃森集团的转型实践",
+          "url": "https://weixin.qq.com/sph/AmVBQ4jXz",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-awqpuhmid",
+          "title": "CRM实战派：纷享销客智能型CRM助力中国机器人销量第一的埃斯顿，解锁线索管理新路径",
+          "url": "https://weixin.qq.com/sph/AWQPuHmid",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-aqimymski",
+          "title": "CRM实战派：纷享销客 CRM助力君诚塑胶重塑2000+客户管理，实现数字化飞跃！",
+          "url": "https://weixin.qq.com/sph/AQiMYMskI",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-abzjg1jjf",
+          "title": "CRM实战派：中国智能制造50强拓斯达，借助纷享销客CRM赋能售后服务管理，驱动营收增长43.66%！",
+          "url": "https://weixin.qq.com/sph/Abzjg1JJf",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-avehnpxz0",
+          "title": "CRM实战派：朴诚乳业携手纷享销客SFA-拜访管理，4周完成4城试点，6周实现全国推广，在食品饮料行业赛道，跑出“新鲜加速度”！",
+          "url": "https://weixin.qq.com/sph/AVEHnPxZ0",
+          "date": ""
+        },
+        {
+          "id": "vid-voice-ahy8ex7cs",
+          "title": "CRM实战派：万东医疗作为世界500强美的集团旗下中国医疗影像的开拓者，借助纷享销客CRM代理通，重塑伙伴关系，赋能业绩增长。",
+          "url": "https://weixin.qq.com/sph/AHy8Ex7CS",
+          "date": ""
+        }
+      ]
     },
     {
       "id": "interview",
       "name": "访谈",
-      "items": []
+      "items": [
+        {
+          "id": "vid-interview-aq2rv4jqa",
+          "title": "京酒新标杆：一担粮酒庄数字化转型的成功之路",
+          "url": "https://weixin.qq.com/sph/AQ2rv4Jqa",
+          "date": ""
+        },
+        {
+          "id": "vid-interview-amvbq4jxz",
+          "title": "传统制造业的数字化破局：沃森集团的转型实践",
+          "url": "https://weixin.qq.com/sph/AmVBQ4jXz",
+          "date": ""
+        },
+        {
+          "id": "vid-interview-adjrlyczo",
+          "title": "中科三清通过纷享销客CRM系统，商机信息准确率从40%飙升至99%，项目关键决策率从10%提升到97%，商机项目失败率下降33%，纷享销客CRM，让企业运营更加精准、高效、可持续。",
+          "url": "https://weixin.qq.com/sph/AdjrLyCzo",
+          "date": ""
+        },
+        {
+          "id": "vid-interview-abp4taolu",
+          "title": "金融企业数字化转型样本：博满集团 CRM 切换实践，效率提升超 70% 的底层逻辑。",
+          "url": "https://weixin.qq.com/sph/Abp4taOLU",
+          "date": ""
+        },
+        {
+          "id": "vid-interview-akzz0woef",
+          "title": "凯宇星辉目前已形成以澳新、南美、北美等全球三大牛羊肉主产区为主渠道的全球直采网络布局。 纷享销客CRM助力凯宇星辉打造国内领先牛羊肉采、产、销一体化全产业链企业集团。",
+          "url": "https://weixin.qq.com/sph/AkZz0WOEf",
+          "date": ""
+        },
+        {
+          "id": "vid-interview-adx9ybojk",
+          "title": "CRM实战派：纷享销客CRM助力中科三清商机准确率从40%提升到99%",
+          "url": "https://weixin.qq.com/sph/Adx9YboJK",
+          "date": ""
+        }
+      ]
     },
     {
       "id": "creative",
       "name": "创意策划",
-      "items": []
+      "items": [
+        {
+          "id": "vid-creative-akewy5tji",
+          "title": "CRM实战派：一担粮使用纷享销客CRM系统，让销售策略更准、库存周转更快、费用花得更值！",
+          "url": "https://weixin.qq.com/sph/AkEwY5tJI",
+          "date": ""
+        },
+        {
+          "id": "vid-creative-aj1qm2abv",
+          "title": "CRM去哪了？【点击预约】今天下午3点，我们去直播间找找！",
+          "url": "https://weixin.qq.com/sph/AJ1qm2ABV",
+          "date": ""
+        },
+        {
+          "id": "vid-creative-aqyaoaniu",
+          "title": "近日，由纷享销客联合东鹏控股和北森举办的“【数字化标杆】游学系列活动之走进东鹏控股”圆满结束！活动围绕“智能展厅参观+数字化转型经验分享+AI CRM解决方案展示”的多元游学形式，共同探索制造业转型新路径！",
+          "url": "https://weixin.qq.com/sph/AqyaOANiu",
+          "date": ""
+        }
+      ]
     }
   ],
   "plans": [
