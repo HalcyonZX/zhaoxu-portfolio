@@ -9,22 +9,362 @@
     {
       "id": "product",
       "name": "产品",
-      "items": []
+      "items": [
+        {
+          "id": "art-product-001",
+          "title": "报价时间缩至5分钟！纷享销客助力东力股份实现营销数字化转型",
+          "description": "东力股份，用一套务实可行的数字化方案，真正做到了降本增效。",
+          "url": "https://mp.weixin.qq.com/s/6jlN9xeQaDkmaQe34MxbVA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/05X2Dia7BDttm0wHzkkkEzOqQ7onFffojibGxHFYXl8WLL0IrHds5XYBgEgVpMJteNL54INESVRoVIhLH7yz1pGzjhs6mgAq7IhicHcQKFGSlI/0?wx_fmt=jpeg",
+          "date": "2026-07-09"
+        },
+        {
+          "id": "art-product-002",
+          "title": "真原生，非外挂：纷享销客发布蜂巢智能体平台，开创Agentic CRM新时代",
+          "description": "CRM正在从“记录系统”走向“行动系统”。",
+          "url": "https://mp.weixin.qq.com/s/qlbqJqSpNfu-rGVl1SRuwg",
+          "coverImage": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/05X2Dia7BDtupPDBvBzKl2XTXbSZVzoicx6lIEQJ76UImsgAsy9K2IPznf2AutqFOxcaD6eBSvVExmlwGKYw6ElS3RVibXianZC1SVYGFvRWAVk/0?wx_fmt=jpeg",
+          "date": "2026-07-02"
+        },
+        {
+          "id": "art-product-003",
+          "title": "职场逆袭，稳如老林",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/i00WXuSb_RpgpvEnrXJ_nw",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqEmpm4mH6gZDQGKduObIgfa2jiarJaTQPrsIq0rh7qEBFtojzf8xB63OAYHPe4VeYEvvTvM4OZLibEg/0?wx_fmt=jpeg",
+          "date": "2025-11-27"
+        },
+        {
+          "id": "art-product-004",
+          "title": "设备管理手账：一位医疗器械行业售后工程师的数字化日常",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/bGpPYPEzYJXE7gtaUNgJjA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqEG7lZnYpwoBDxQVNeIZW0WO6HWpqgGIUslKFZ7Xg5vDSKARWP053Sz0q5ibeWmXHnmkGwWc2o7VTg/0?wx_fmt=jpeg",
+          "date": "2025-10-23"
+        },
+        {
+          "id": "art-product-005",
+          "title": "6周全国铺开！SFA-拜访管理解决低温奶3大痛点",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/hNBHc6u_DuBf4ylZ6BqR1Q",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqEje2fLaSFCmcRMZUkZeEINxF9quG3cTq3FiaibgtBf1Sf0Dz2nEHWtK0zvwz07Pd8MMWKUQXBibswxQ/0?wx_fmt=jpeg",
+          "date": "2025-10-16"
+        },
+        {
+          "id": "art-product-006",
+          "title": "CRM实战派｜纷享销客CRM赋能企业售后服务管理，驱动营收增长43.66%",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/0HNaiC8RVQebuZ4NV5g5tg",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHM4ZkG15ghiaRq09ia8spkyWc7lM9dPibzIucd3vOebGnicf9s9U8bHL5WOF3lw6V6NVEz2h7eSvJJRA/0?wx_fmt=jpeg",
+          "date": "2025-09-25"
+        },
+        {
+          "id": "art-product-007",
+          "title": "CRM实战派｜CRM可配置报价(CPQ)管理，2分钟轻松搞定复杂产品配置和报价",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/PMS_4rNBg4Od-8c-xOp3qw",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFH0zrHJ7aetWh8unPJDibSbbGl91ttQk8mg5OcEic6PfqNn5zqogCM5oAQGh6LjHU7zwQakq6dI01w/0?wx_fmt=jpeg",
+          "date": "2025-09-18"
+        },
+        {
+          "id": "art-product-008",
+          "title": "三周搞定Salesforce系统迁移？核心方法论大揭秘！",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/OYKgI4dl-Qh3N1Fpp-FLEQ",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqG37KTwGqzNT5hHbDECiaGR0htn7QlefRibSwAMfd0UzUA5KEH4iaIjpB8iaFXfDhibnvBrZKOroPZLa1g/0?wx_fmt=jpeg",
+          "date": "2025-09-16"
+        },
+        {
+          "id": "art-product-009",
+          "title": "CRM实战派｜中国机器人销量No.1企业的CRM线索管理秘籍，点击一键复制成功！",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/12rjGCWmZUc-dACjZ6ci3Q",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqGh6aJOxlwSw5D8ghicFCAJD1pVk8NEH1yATZ0O6QpHO91ofDonlx69DFbLY5WvhF9PNjKJNEe0NwA/0?wx_fmt=jpeg",
+          "date": "2025-09-11"
+        },
+        {
+          "id": "art-product-010",
+          "title": "CRM实战派 | 纷享销客CRM订货通：全渠道一站式订货平台",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/K_6sJ99TKkgW0oAz-zCGbA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqH12tRUTPvbiaDvehEX1nJLVLhBmEU7BFuXgicp1p4rVI9aeGzJKsSXicyAwUt3ckbvNUepYmxeV0QVA/0?wx_fmt=jpeg",
+          "date": "2025-08-28"
+        },
+        {
+          "id": "art-product-011",
+          "title": "CRM实战派 | 90%满意度+70%复购率，纷享销客CRM工单管理助力企业服务效率升级",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/vZZQcZyG7F9u-C-EyNoz0Q",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHUCbCeibeCjQ79oXicqzE2TekLxBZ28j2XBK9lZwSp2hUHsVgX6EnwVZyJPYYL9KU0gtoDdc5KNMLg/0?wx_fmt=jpeg",
+          "date": "2025-08-21"
+        },
+        {
+          "id": "art-product-012",
+          "title": "CRM实战派｜海量客户信息迷雾中，如何用 CRM 点亮 360° 客户管理？",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/JtgA5PL2YAsx5P9Cr7EEeA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFUPeJicnnC0DPLv6yKz14Mic5JqLVymtAa0NKBPaZO1pD6o5gHRLAibeBNvRE8gdjTd8qdSPrZ8Mic1w/0?wx_fmt=jpeg",
+          "date": "2025-08-14"
+        },
+        {
+          "id": "art-product-013",
+          "title": "CRM实战派 | CRM交付项目管理的实战方法论：解码服务全国10万+餐饮企业的成功路径",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/Wby4m5_GXcV3Rgo3SiLT_A",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFD9qpFiciaFoeNoicH3Tz21npWiasVTj8BcfqUKozfBosdqAIoodn7KPhnVpq1gjnribzVZVZXbNicAmbw/0?wx_fmt=jpeg",
+          "date": "2025-08-07"
+        },
+        {
+          "id": "art-product-014",
+          "title": "CRM实战派｜以客户为中心的全价值链数字化平台，赋能制造行业健康增长",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/CQLV0N4h35q9qq3IDjnq8A",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHUvPQCO5YFoDoyMd6cgTeLZREKOF6ibibdNAgNouicKUnqV8TAN4pWmYhNKNmK7O85tOp6O2FQCjGeA/0?wx_fmt=jpeg",
+          "date": "2025-07-31"
+        },
+        {
+          "id": "art-product-015",
+          "title": "商机管理不靠感觉靠科学，精准度高达99%的秘密是？",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/jeq0hh2TelDIx2jH328jVA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqGT6afqMPsgrtQmvREnhLv9GFYwyNiaHjAzB05DRuicjvqs8qwrabxguQ26Ebab36UP013ibRr6zYKgQ/0?wx_fmt=jpeg",
+          "date": "2025-07-17"
+        }
+      ]
     },
     {
       "id": "case",
       "name": "客户案例",
-      "items": []
+      "items": [
+        {
+          "id": "art-case-001",
+          "title": "从千万级系统到国产黑马：这家新材料企业为何果断换掉Salesforce？",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/gHbfstPRuuwwoUW6UF4enQ",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFIO03vB9IibKxYxdkKibdtrCg1O8Om7hsXCjCO9d41Sfc31zN3MA4ibm8DibE3GKdSibOY4rqmRfxZB3g/0?wx_fmt=jpeg",
+          "date": "2025-10-14"
+        },
+        {
+          "id": "art-case-002",
+          "title": "破界与融合：轴承全产业链领航企业“IT业务一体化”实践",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/flR5XKRp-M4h8AgKIoUpaQ",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHFJw6ZVakEZibujse5M4HTpRarvCB5kNc60dU4vmNSh35ibsN5YqYLjHYphTJSth9lk65Hz3vqhoicg/0?wx_fmt=jpeg",
+          "date": "2025-09-12"
+        },
+        {
+          "id": "art-case-003",
+          "title": "从海外系统到纷享销客，博满集团的CRM转身有多关键？",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/zjALenbzmmf6W1VfBjoL9Q",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHZILbPqxmcs9h8eIzjW59bt2uwTKNn13ZBOxBfKIibge3JLzEzgPw9u8ic6PUn2v0SibckNLXZ4ZqQg/0?wx_fmt=jpeg",
+          "date": "2025-09-01"
+        },
+        {
+          "id": "art-case-004",
+          "title": "行业效率最高的公司提升背后：艾比森拆解 LTC 变革如何重构销售价值",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/xjLESWc_NjeqR5v8V0kypw",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFOkIvdxiacA0M0gXSt2nE6iaodGgoY3cKtmbTHr5SXGGiabibahnlwIYmeIpRJiadBibiaXibO7EG23q8Udw/0?wx_fmt=jpeg",
+          "date": "2025-08-26"
+        },
+        {
+          "id": "art-case-005",
+          "title": "通合科技如何用 “业财一体化 + 销售智能化” 破解制造企业增长难题",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/PuZG2ad4CQ13MFt51E7Evw",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHmNpeyKRXlrMGpiaUwAJ50hyaCXKuqEsllsJ5LuW4webt7tE1zNXqgFrqBowPSBBXib7XBqJFeUu8g/0?wx_fmt=jpeg",
+          "date": "2025-08-04"
+        },
+        {
+          "id": "art-case-006",
+          "title": "三周落地！纷享销客CRM为海格物流筑起数字化护城河，破解行业内卷",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/NZQTJ-NI8fT3Zqn9vNRw4A",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqF6Jicr7mGCOGerWYIXhlvutq5qwIUib3jV8bKtxboWAKNlibPRdQ3jppgPte2iaKJic9xX9vJUEQauOnQ/0?wx_fmt=jpeg",
+          "date": "2025-08-01"
+        },
+        {
+          "id": "art-case-007",
+          "title": "新松机器人：从流程重塑到业务协同的全景落地",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/QOdK5FI5CZP55oQuXe8VWA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqE9plFnRJziaLS5tdPzmB9gCHXyu9R5ERA1ALGTQYB1pwkDgjpLWDy1pib292S6OjuVlo39ibSAYgKoQ/0?wx_fmt=jpeg",
+          "date": "2025-07-18"
+        },
+        {
+          "id": "art-case-008",
+          "title": "商机准确率从40%到99%，中科三清如何用数据重构商机管理逻辑？",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/6K9KBwcYNVa-qUhz1bb9Fg",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqGRhSDNjiaBjkTmoZzxgcMybt0uVbjarDcZbvyPrkMDWalyxplg1q9673FJHH8ribHk9BF4uFzxCr8g/0?wx_fmt=jpeg",
+          "date": "2025-07-07"
+        },
+        {
+          "id": "art-case-009",
+          "title": "老牌制造的突围之道：沃森集团重构增长曲线",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/CMBpaPfZAJSiFhtWxaMPBA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqEd9jmvwickdlWqY1z7Ubkic1WbMkUJICJXqlj6G13yexCzB5lRicfojLoyhhp4SiafNZVQ8Xiac4iaJ7ew/0?wx_fmt=jpeg",
+          "date": "2025-06-24"
+        },
+        {
+          "id": "art-case-010",
+          "title": "老牌“京酒”一担粮携手纷享销客，五位一体产业模式数智转型升级",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/mxduaB_b9w_N6fut6AWlBw",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHOISCyOrWu9raZgayth6XKfxYtNgzJJA5E50vEbeuqKYYUAnib2PRicsg5XGZWaoJXicx80I1Xhichtg/0?wx_fmt=jpeg",
+          "date": "2025-06-12"
+        }
+      ]
     },
     {
       "id": "creative",
       "name": "创意策划",
-      "items": []
+      "items": [
+        {
+          "id": "art-creative-001",
+          "title": "藏在49封感谢信里的秘密：CRM如何驱动企业增长？",
+          "description": "从哈尔滨到香港，这49封感谢信跨越了整个春天",
+          "url": "https://mp.weixin.qq.com/s/hCneSGEOPjA2W15N0FPANw",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/05X2Dia7BDtsypspavOgl4YzjGbNF47tb0xOhVbAGhh95oVWxAhB4EkINhYDFicZVzMDdFicNWVnswOcC4RpcnKvyGG9Gbrno0icCb6DoLHUTf4/0?wx_fmt=jpeg",
+          "date": "2026-03-09"
+        },
+        {
+          "id": "art-creative-002",
+          "title": "纷享销客在2025",
+          "description": "铭记每一次火力全开，量化每一程增长山海",
+          "url": "https://mp.weixin.qq.com/s/h9IQHWxiJfEPjWFOuhbN8w",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqH0sEicpoEMrkgKavKvGEpCFzy6cDiauOwSW1IUCugNu02ezYbTlrWZIWvK9GiaeFIwiaeqE3ogRPAsog/0?wx_fmt=jpeg",
+          "date": "2026-01-13"
+        },
+        {
+          "id": "art-creative-003",
+          "title": "纷享销客2025客户同学录",
+          "description": "把这一年的温暖同行，写进我们的同学录。",
+          "url": "https://mp.weixin.qq.com/s/7wYruemTxZliKTbEfwSthg",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqG1pnWRYXYvFJ7BZlPtlDx48QxhUW7fXv763TO6WttkdicVj6V109svs1lia0ZVFpwfxxckLNiaSmUUA/0?wx_fmt=jpeg",
+          "date": "2025-12-22"
+        },
+        {
+          "id": "art-creative-004",
+          "title": "你可以拒绝我，但不能拒绝纷享AI",
+          "description": "代入感很强，已经...",
+          "url": "https://mp.weixin.qq.com/s/E44eN1h8J5ZMeUrgyzAZFA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFlMgWoP4edVZQmJe2jXSb29JKw0iaEqwlCoibmSUAJhW4psiaiaiatRnsDiaXWiamZKAYyplFBGKP2SnQJQ/0?wx_fmt=jpeg",
+          "date": "2025-11-25"
+        }
+      ]
     },
     {
       "id": "event",
       "name": "活动",
-      "items": []
+      "items": [
+        {
+          "id": "art-event-001",
+          "title": "IDC重磅：纷享销客营收首超国际巨头，本土CRM进入Agentic时代",
+          "description": "中国CRM行业正在从国际厂商定义标准走向中国场景定义标准。",
+          "url": "https://mp.weixin.qq.com/s/-UGfCRFNFe_HuYXmIvXGfQ",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/05X2Dia7BDtsPZXQia7QL0HIiaWcdiavic79MJuJ1avaYQzfK8dx6VU0gz7ADknnsEj6ib138licx2nkBZYGm8H5dP5TbCT17auGEHYGNVx6UHKrnY/0?wx_fmt=jpeg",
+          "date": "2026-07-08"
+        },
+        {
+          "id": "art-event-002",
+          "title": "掘金AI时代，纷享销客重庆生态伙伴这样找到确定性",
+          "description": "纷享销客Agentic CRM ，懂业务能工作会进化的智能CRM",
+          "url": "https://mp.weixin.qq.com/s/GqVuB1aGlifuJU0bBtAu5g",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/05X2Dia7BDtticYibWSic5o8CKFV58DPcjS9Qicpp8OUxOlb8g23KkTDhC6MWibs1NMeHteJwQAruRC4L8cDDILM37Qc9t6nfbwT8t7LxBCNOh0TU/0?wx_fmt=jpeg",
+          "date": "2026-06-25"
+        },
+        {
+          "id": "art-event-003",
+          "title": "纷享销客入选Gartner®VOC报告全球强劲表现者象限",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/AXm37pmEWWsvTQJMRZYOvA",
+          "coverImage": "https://mmbiz.qpic.cn/sz_mmbiz_jpg/05X2Dia7BDtu9DTLxwFjDODJHJjDRo5Alxqic41yTktwCzjxsQ7iblbYcNWqialQ2Ged7Za5fqjb52YWabs15boffiaaeM0icassafF58lLmYrk4E/0?wx_fmt=jpeg",
+          "date": "2026-03-02"
+        },
+        {
+          "id": "art-event-004",
+          "title": "双项荣誉加身！纷享销客入选数智工业成长型企业并获评优秀产品",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/7aWoyIduFofZa2lg38Sbdw",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/05X2Dia7BDttUkT06s6E2fWNicdSuwnye6kEx7gHibPx6ddwwYDo6tJEdeFoO1YMnhZJeCXgPXtet6oficZic6Qh7EXhPCEiaur5TKZjjywXibX1zE/0?wx_fmt=jpeg",
+          "date": "2026-02-09"
+        },
+        {
+          "id": "art-event-005",
+          "title": "纷享销客亮相全球AI行业顶级盛会——WAIC UP! 连接全球AI，对话与企业实践",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/nMm2zWrjmF0wzJFM6Shg9w",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqHEskh0dwx3gn9D0eLW80bjXP4GiaBgvT6ficplibU5QoaLlZ1iclmv9Gr454nKiatr45EVqQXRMKBibZxQ/0?wx_fmt=jpeg",
+          "date": "2026-02-02"
+        },
+        {
+          "id": "art-event-006",
+          "title": "连续6年领跑！IDC报告：纷享销客稳居中国本土CRM市场份额与增速双第一",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/W6vB1nUjqZPCyG5uD9WF5Q",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFU55eniaPjMhnKymkxB6MqC5icQGIicleIY2qbDoUFwNRJXepHARWqCIXRDnudTcriaYA3mn83ASflDw/0?wx_fmt=jpeg",
+          "date": "2025-12-08"
+        },
+        {
+          "id": "art-event-007",
+          "title": "走进长虹佳华，共探数字化转型升级与业务增长新路径",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/LBgYcXLVmHiKfKjV3nHjHQ",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqEqxylHDf58xGLPC8uRxhFUenHFdKzkjvbdUEW8RCsDexluv1ac8eSCicQWWR3qK5iaEO9iaPHnP4Tww/0?wx_fmt=jpeg",
+          "date": "2025-11-19"
+        },
+        {
+          "id": "art-event-008",
+          "title": "贵大校友会走进纷享销客——校企携手，共探数字化转型新路径",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/qCKsTTdtcGxARoq8O5zvRQ",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqEicKyib4Yev4o7plt1cibA09WDM9N8H3ibDNNyU7t8ZkYBKXQgSKTmFoLGEzzV0n96t8uPuvODZk4cxA/0?wx_fmt=jpeg",
+          "date": "2025-11-13"
+        },
+        {
+          "id": "art-event-009",
+          "title": "精准数字化破局：马大姐重塑休闲食品运营新逻辑",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/yBmknnmSWAtirCyVCeMbCg",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqEibhPF13DpLHLtHWAEgo2Cu0XvHw53LvUhlDKB3nPkicOPEjfzKZXLPGW1DctnaG55TCtvvZAtbicyA/0?wx_fmt=jpeg",
+          "date": "2025-09-22"
+        },
+        {
+          "id": "art-event-010",
+          "title": "德源电力 × 纷享销客：CRM 赋能能源企业，激活数字化增长新引擎",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/3amPNctzM5vPsSM3OXuQmg",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqGCh9QHSGnFz0ibM7KKksGTtA6z2X1SIES4Bd5icoES0yrIuyVJaXCL59UdoMpj9kfZ8Z580ONmNXlQ/0?wx_fmt=jpeg",
+          "date": "2025-09-17"
+        },
+        {
+          "id": "art-event-011",
+          "title": "从构想到共建：企业如何推动AI真正落地？",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/v4sGliIYpZv8MIMkyIzZ5Q",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqE4Wj0l5lFdrlKowoIaD88MLMD9jYc3k8uboAGj3DKB33EgCIPibdHUaoe9GAQHwsW3W8up1cLvGUQ/0?wx_fmt=jpeg",
+          "date": "2025-06-03"
+        },
+        {
+          "id": "art-event-012",
+          "title": "纷享销客城市客户生态会北京站成功举办，“AI+CRM+行业智慧”赋能企业增长",
+          "description": "",
+          "url": "https://mp.weixin.qq.com/s/HHg_RZECWT2uyStfSjBHpA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqFTC8EVkpEkWbOvEqc4AsT9TylUX2jsEjuFkksKgpTxBzmKicCVOD0l1vico5tLW2AicqmiaeljDpWmaQ/0?wx_fmt=jpeg",
+          "date": "2025-05-19"
+        },
+        {
+          "id": "art-event-013",
+          "title": "纷享销客将亮相CIBF2025，AI+CRM引领电池产业链新增长！",
+          "description": "5月15日-17日诚邀莅临深圳国际会展中心8T072展台",
+          "url": "https://mp.weixin.qq.com/s/ZS5QqcQGFCC1fcGSaaaRzA",
+          "coverImage": "https://mmbiz.qpic.cn/mmbiz_jpg/atEs2PWCzqF2HiasWf8Yufo1K82WqFmhDfuP2aYup63tZluJ2QRYOLoMFEvw6Ep6rkMdRjz0pevzq99GuO6gORA/0?wx_fmt=jpeg",
+          "date": "2025-05-12"
+        }
+      ]
     }
   ],
   "videos": [
