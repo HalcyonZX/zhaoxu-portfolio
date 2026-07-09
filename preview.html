@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F2F2F4">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>赵旭 — 个人作品集</title>
+  <link rel="stylesheet" href="./css/style.css?v=20260709b">
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <div class="site-nav__links" id="nav-links">
+      <a href="#" class="active" data-section="articles">文章</a>
+      <a href="#" data-section="videos">视频</a>
+      <a href="#" data-section="plans">策划案</a>
+    </div>
+    <button class="site-nav__menu-btn" id="menu-btn" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- 个人介绍 -->
+<header class="hero">
+  <div class="hero__inner">
+    <div class="hero__avatar" id="hero-avatar">
+      <img src="" alt="赵旭" id="hero-avatar-img" style="display:none;">
+      <span id="hero-avatar-text">赵</span>
+    </div>
+    <div class="hero__text">
+      <h1 class="hero__name" id="hero-name">赵旭</h1>
+      <p class="hero__title" id="hero-title">内容创作者</p>
+    </div>
+  </div>
+  <p class="hero__bio" id="hero-bio">专注品牌内容创作与营销策划，擅长公众号图文、视频号内容及全案策划。</p>
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <span class="hero__stat-num" id="stat-articles">0</span>
+      <span class="hero__stat-label">文章</span>
+    </div>
+    <div class="hero__stat-divider"></div>
+    <div class="hero__stat">
+      <span class="hero__stat-num" id="stat-videos">0</span>
+      <span class="hero__stat-label">视频</span>
+    </div>
+    <div class="hero__stat-divider"></div>
+    <div class="hero__stat">
+      <span class="hero__stat-num" id="stat-plans">0</span>
+      <span class="hero__stat-label">策划案</span>
+    </div>
+  </div>
+</header>
+
+<!-- 分割线 -->
+<div class="divider"></div>
+
+<!-- 主内容区 -->
+<main class="main-content">
+
+  <!-- 分类标签栏 -->
+  <div class="tab-bar" id="tab-bar">
+    <button class="tab-btn active" data-tab="articles">文章</button>
+    <button class="tab-btn" data-tab="videos">视频</button>
+    <button class="tab-btn" data-tab="plans">策划案</button>
+  </div>
+
+  <!-- 内容列表 -->
+  <div class="content-section active" id="section-articles">
+    <div class="subtab-bar" id="subtab-bar-articles"></div>
+    <div class="content-grid" id="grid-articles"></div>
+    <div class="empty-state" id="empty-articles">
+      <h3 class="empty-state__title">暂无文章</h3>
+      <p class="empty-state__desc">文章链接将在添加后在此展示</p>
+    </div>
+  </div>
+
+  <div class="content-section" id="section-videos">
+    <div class="content-grid content-grid--video" id="grid-videos"></div>
+    <div class="empty-state" id="empty-videos">
+      <h3 class="empty-state__title">暂无视频</h3>
+      <p class="empty-state__desc">视频作品将在添加后在此展示</p>
+    </div>
+  </div>
+
+  <div class="content-section" id="section-plans">
+    <div class="content-grid" id="grid-plans"></div>
+    <div class="empty-state" id="empty-plans">
+      <h3 class="empty-state__title">暂无策划案</h3>
+      <p class="empty-state__desc">策划案文档将在添加后在此展示</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <p>&copy; 2026 赵旭</p>
+</footer>
+
+<!-- 视频播放弹窗 -->
+<div class="modal" id="video-modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__container modal__container--video">
+    <button class="modal__close" id="video-modal-close">&times;</button>
+    <div class="modal__video-wrap">
+      <video id="video-player" controls playsinline></video>
+    </div>
+    <div class="modal__info">
+      <h3 class="modal__title" id="video-modal-title"></h3>
+      <p class="modal__desc" id="video-modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- PDF 查看弹窗 -->
+<div class="modal" id="pdf-modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__container modal__container--pdf">
+    <button class="modal__close" id="pdf-modal-close">&times;</button>
+    <div class="modal__pdf-wrap">
+      <iframe id="pdf-viewer" title="PDF查看器"></iframe>
+    </div>
+    <div class="modal__info">
+      <h3 class="modal__title" id="pdf-modal-title"></h3>
+      <a class="modal__download-btn" id="pdf-download-btn" download>下载 PDF</a>
+    </div>
+  </div>
+</div>
+
+<script src="./js/app.js?v=20260709b"></script>
+</body>
+</html>
