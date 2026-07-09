@@ -138,13 +138,9 @@
     grid.style.display = 'flex';
     empty.style.display = 'none';
     grid.innerHTML = items.map(function (item) {
-      const coverContent = item.coverImage
-        ? '<img src="' + escapeHtml(item.coverImage) + '" alt="' + escapeHtml(item.title) + '">'
-        : '📄';
       const dateStr = item.date || '';
       return (
         '<a class="article-card" href="' + escapeHtml(item.url || '#') + '" target="_blank" rel="noopener noreferrer">' +
-          '<div class="article-card__cover">' + coverContent + '</div>' +
           '<div class="article-card__body">' +
             '<div class="article-card__date">' + escapeHtml(dateStr) + '</div>' +
             '<div class="article-card__title">' + escapeHtml(item.title) + '</div>' +
