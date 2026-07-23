@@ -367,6 +367,15 @@
       ]
     }
   ],
+  "dciIssues": [
+    {
+      "id": "dci-2025-09",
+      "title": "Digital CIO Insights 2025年9月刊",
+      "description": "用技术重构业务基因 — AI驱动业务创新、CRM遇上AI、数字化BP等6篇深度文章",
+      "pdfUrl": "./assets/pdfs/dci-2025-09.pdf",
+      "date": "2025-09-01"
+    }
+  ],
   "videoCategories": [
     {
       "id": "event",

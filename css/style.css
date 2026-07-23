@@ -162,6 +162,7 @@ body {
   margin-top: var(--gap-lg);
   padding-top: var(--gap-md);
   border-top: 1px solid var(--border);
+  flex-wrap: wrap;
 }
 .hero__stat {
   display: flex; flex-direction: column; align-items: center; gap: 4px;
@@ -535,8 +536,9 @@ body {
     white-space: nowrap;          /* 强制单行 */
     max-width: none;             /* 移除 420px 限制 */
   }
-  .hero__stats { gap: var(--gap-md); flex-wrap: wrap; }
-  .hero__stat-num { font-size: 26px; }
+  .hero__stats { gap: var(--gap-sm); flex-wrap: wrap; }
+  .hero__stat-num { font-size: 24px; }
+  .hero__stat-label { font-size: 10px; }
 
   /* 文章卡片移动端 */
   .article-card__title { font-size: 14px; }
@@ -588,9 +590,9 @@ body {
     white-space: nowrap;
     max-width: none;
   }
-  .hero__stat-num { font-size: 22px; }
-  .hero__stat-label { font-size: 10px; }
-  .hero__stats { gap: var(--gap-sm); }
+  .hero__stat-num { font-size: 20px; }
+  .hero__stat-label { font-size: 9.5px; }
+  .hero__stats { gap: var(--gap-xs); }
 
   /* 导航品牌名稍小 */
   .site-nav__brand { font-size: 12px; letter-spacing: 1.2px; }

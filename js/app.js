@@ -1,6 +1,6 @@
 /**
  * 赵旭个人作品集 — 前端逻辑
- * 支持三种内容类型：公众号文章(链接)、视频号视频(视频文件)、策划案(PDF文件)
+ * 支持三种内容类型：公众号文章(链接)、DCI专栏(PDF)、视频号视频(视频文件)、策划案(PDF文件)
  */
 
 (function () {
@@ -43,6 +43,10 @@
           { id: 'event', name: '活动', items: [] }
         ];
       }
+      // 兜底：确保有 dciIssues
+      if (!contentData.dciIssues) {
+        contentData.dciIssues = [];
+      }
       // 兜底：确保有 videoCategories
       if (!contentData.videoCategories) {
         contentData.videoCategories = [
@@ -70,7 +74,8 @@
           { id: 'interview', name: '访谈', items: [] },
           { id: 'creative', name: '创意策划', items: [] }
         ],
-        plans: []
+        plans: [],
+        dciIssues: []
       };
     }
   }
@@ -100,6 +105,8 @@
     }, 0);
     $('#stat-articles').textContent = articleCount;
 
+    $('#stat-dci').textContent = (contentData.dciIssues || []).length;
+
     const videoCount = (contentData.videoCategories || []).reduce(function (sum, c) {
       return sum + (c.items ? c.items.length : 0);
     }, 0);
@@ -113,6 +120,7 @@
   function renderAllSections() {
     renderArticleSubtabs();
     renderArticles();
+    renderDci();
     renderVideoSubtabs();
     renderVideos();
     renderPlans();
@@ -171,6 +179,38 @@
           '</div>' +
           '<span class="article-card__arrow">↗</span>' +
         '</a>'
+      );
+    }).join('');
+  }
+
+  // --- DCI专栏 ---
+  function renderDci() {
+    var grid = $('#grid-dci');
+    var empty = $('#empty-dci');
+    var items = contentData.dciIssues || [];
+
+    if (!items.length) {
+      grid.style.display = 'none';
+      empty.style.display = 'block';
+      return;
+    }
+
+    grid.style.display = 'flex';
+    empty.style.display = 'none';
+    grid.innerHTML = items.map(function (item, idx) {
+      return (
+        '<div class="plan-card" data-dci-idx="' + idx + '">' +
+          '<div class="plan-card__icon">📘</div>' +
+          '<div class="plan-card__body">' +
+            '<div class="plan-card__title">' + escapeHtml(item.title) + '</div>' +
+            (item.description ? '<div class="plan-card__desc">' + escapeHtml(item.description) + '</div>' : '') +
+          '</div>' +
+          '<div class="plan-card__meta">' +
+            '<div class="plan-card__date">' + escapeHtml(item.date || '') + '</div>' +
+            '<div class="plan-card__badge">PDF</div>' +
+          '</div>' +
+          '<span class="plan-card__arrow">→</span>' +
+        '</div>'
       );
     }).join('');
   }
@@ -296,6 +336,14 @@
       openPdfModal(idx);
     });
 
+    // DCI专栏卡片点击
+    $('#grid-dci').addEventListener('click', function (e) {
+      var card = e.target.closest('.plan-card');
+      if (!card) return;
+      var idx = parseInt(card.dataset.dciIdx, 10);
+      openDciPdfModal(idx);
+    });
+
     // PDF弹窗关闭
     $('#pdf-modal-close').addEventListener('click', closePdfModal);
     $('#pdf-modal .modal__overlay').addEventListener('click', closePdfModal);
@@ -342,6 +390,19 @@
     $('#pdf-viewer').src = '';
     $('#pdf-modal').classList.remove('show');
     document.body.style.overflow = '';
+  }
+
+  // ============ DCI PDF 弹窗 ============
+  function openDciPdfModal(idx) {
+    var item = contentData.dciIssues[idx];
+    if (!item) return;
+
+    var pdfUrl = item.pdfUrl || '';
+    $('#pdf-viewer').src = pdfUrl;
+    $('#pdf-modal-title').textContent = item.title || '';
+    $('#pdf-download-btn').href = pdfUrl;
+    $('#pdf-modal').classList.add('show');
+    document.body.style.overflow = 'hidden';
   }
 
   // ============ 工具函数 ============
